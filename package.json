@@ -1,0 +1,14 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "food app node express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brostouch",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
