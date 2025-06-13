@@ -3,6 +3,7 @@ const colors = require("colors");
 const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
+const router = require("./routes/testRout");
 
 // dot env configuration
 dotenv.config();
@@ -18,6 +19,9 @@ app.use(morgan("dev"));
 
 //rout
 // URL => http://localhost:8080
+app.use("/api/v1/test",router)
+
+
 app.get("/",(req,res)=>{
     return res.status(200).send("<h1>Hello food server app</h2>")
 })
