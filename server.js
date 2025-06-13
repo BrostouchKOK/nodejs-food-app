@@ -4,9 +4,13 @@ const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
 const router = require("./routes/testRout");
+const connectDB = require("./config/db");
 
 // dot env configuration
 dotenv.config();
+
+// DB connection
+connectDB();
 
 // rest object
 const app = express();
