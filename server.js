@@ -23,7 +23,8 @@ app.use(morgan("dev"));
 
 //rout
 // URL => http://localhost:8080
-app.use("/api/v1/test",router)
+app.use("/api/v1/test",require("./routes/testRout"))
+app.use("/api/v1/auth",require("./routes/authRoutes"))
 
 
 app.get("/",(req,res)=>{
